@@ -1,33 +1,35 @@
+      
+
 def main():
   print("Hello learners!")
 
 if __name__=="__main__":
   main()
 
+#from urllib import response
+
+from urllib import response
+
+import requests
+
 def trivia_fetch (num):
-    trivias={1: "UNO es un divertido juego de cartas",
-            2: "Dos litros de agua al día son necesarios para una buena salud adulta",
-            3:  "tres corazones tienen los pulpos" ,
-           42:  "42 pulgadas es  la longitud maxima de un bate de baseball",
-          1000:  "Las mil y una noches es un cuento "}
-    
-    trivia={"number":num, 
-                 "text":trivias [num] }
-    return(trivia)
-      
-      
+       url = f"https://opentdb.com/api.php?amount={num}"
+       response = requests.get(url)
+       trivia = response.json()
+       return trivia["results"]
+ 
+
+  
 def main():
-    numero = int(input("Ingresa un número: "))
+    cantidad = int(input("Cuántas preguntas quieres?: "))
     
      
-    trivia = trivia_fetch(numero)
+    trivia = trivia_fetch(cantidad)
+    for preguntas in trivia:
+        print(preguntas["question"])
+
+
     
-  
 
-
-    print(trivia)
 if __name__=="__main__":
-  main()
-
-
-
+    main()
