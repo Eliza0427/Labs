@@ -7,39 +7,47 @@ def main():
 if __name__=="__main__":
   main()
 
+# `addmultiplenumbers([num, num, ..])
 
-def addmultiplenumbers(numeros):
-     total=0
-    
-     for numero in numeros:
-        total = total + numero
-     return total
+num1=float(input("ingrese unnumero: ")) 
+num2 = float(input("ingrese un numero: "))
+num3 = float(input("ingrese un numero: "))
+print("           ")
 
-response = addmultiplenumbers([5,7,9])
-assert response == 21
-  
-def multiplecomplicatednumbers(numeros):
- total=1
- for numero in numeros :
-    total = total * numero
-    response = addmultiplenumbers([5,-7,9.3])
-    response = round(response,1)
-    assert response == 7.3 
+def sumamultiplenumbers(num1, num2, num3):
+  return num1 + num2 + num3
 
-def multiplymultiplednumbers(numeros):
-  total = 1 
-  for numero in numeros: 
-    total= total * numero
-  return total
-response = multiplymultipledumbers([4,-5,6.7])
-response = round(response, 0)
-assert response == -134
+result = sumamultiplenumbers(num1, num2, num3)
+print(f"La suma de los números es: {result}")
 
-def isiteven(numero):
-  
-  response = isiteven(6)
-  assert response == True
 
-  def test_is_minus_three_point_eight_even():
-    response = isiteven(-3.8)
-  assert response == False
+def multiplymultiplenumbers(num1, num2, num3):
+  return num1 * num2 * num3 
+
+result = multiplymultiplenumbers(num1, num2, num3)
+print(f"La multiplicación de los números es: {result}") 
+print("           ")
+print("           ")
+
+
+num = float(input("Ingrese un número: "))
+
+def isiteven(num):
+  if num % 2 == 0:
+    return True
+  else:
+    return False
+
+result = isiteven(num)
+print(f"El número es par: {result}")
+print("           ")
+
+
+def isitaninteger(num):
+  if isinstance(num, int):
+    return True
+  else:
+    return False
+
+result = isitaninteger(num)
+print(f"El número es un entero: {result}")
