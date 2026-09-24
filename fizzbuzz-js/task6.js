@@ -1,5 +1,32 @@
 // Refer to Task 6 in your Instructions to complete this task
 
-for (let i = 0; i < 1; i++) {
-    console.log("This is Task Six!");
-  };
+let num =Number(prompt("Ingrese un número: "))
+let num2 = []
+for (let i = 1; i<= num; i++){ 
+   num2.push(i);
+
+   if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0)
+    console.log(i,"Fizz- Buzz -woof" )
+
+   else if (i % 7 === 0 && i % 5 === 0)
+    console.log(i , "woofbuzz")
+
+   else if (i % 7 === 0 && i % 3 === 0)
+    console.log(i , "Fizzwoof")
+
+   else if (i % 3 === 0 && i % 5 === 0)
+    console.log(i , "FizzBuzz")
+
+   else if(i % 7 === 0) 
+    console.log(i, "Woof");
+  
+   else if (i % 5 === 0) 
+    console.log(i , "Buzz"); 
+
+    else if(i % 3 === 0) 
+    console.log(i, "Fizz") 
+
+    else
+    console.log(i, "     "); 
+}
+console.log(num2)
