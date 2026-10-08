@@ -1,0 +1,20 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background-color: LightSlateGray;
+  
+}
+
+h3 {
+    color: DarkGreen;
+}
+
+.azul {
+    color: rgb(81, 81, 231);
+}
+.rojo {
+    color: rgb(164, 53, 53);
+}
