@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+ .navbar{
+  align-items: center;
+ }
+
+.bg-1 {
+    background-color: #eaf3c4;   
+}
+
+ .nav-item{
+    font-size: 1.2rem;
+    font-weight: bold; /*Pone el texto en negrita */
+    display: flex;
+    gap: 60 px; /* espacio entre textos */
+ }
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:row-reverse;
+    font-family:Arial, sans-serif;
+}
+
+/* inicio */
+.index {
+    background-color:rgba(60, 12, 60, 0.838) ;
+
+}
+.index .footer {
+    text-align: center;
+    display: flex-end;
+    justify-content: center;
+    gap: 330px; /* espacio entre textos */
+}
+
+
+   
+
+
+
+/* Contacto */
+.contacto {
+    background-color:#cdabe6;
+}
+
+.contacto .footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 330px; /* espacio entre textos */
+}
+
+
+
+/* Acerca de */
+.acercade {
+    background-color: #0c3c3f;
+}
+
+.acercade .footer {
+    background-color: #5b8481;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 330px; /* espacio entre textos */
+}
+
